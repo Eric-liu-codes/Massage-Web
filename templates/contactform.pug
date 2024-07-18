@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Schedule Appointment
+        link(rel='stylesheet', type='text/css', href='/css/main.css')
+        link(rel='stylesheet', type='text/css', href='/css/main.dark.css')
+        script(src='/js/main.js')
+        script(src='/js/contact.js')
+    body
+        nav
+            ul
+                li
+                    a(href='/') Home
+                li
+                    a(href='/testimonies') Testimonials
+                li
+                    a(href='/contact') Schedule Appointment
+                li
+                    a(href='/admin/contactlog') Contact Log
+                li
+                    button#toggleTheme Toggle Dark Mode
+
+        h1#schedule Schedule an Appointment
+
+        .contact-form-container
+            form(action='/contact', method='post')
+                div
+                    label(for='name') Name:
+                    input(type='text', id='name', name='name', required)
+                div
+                    label(for='email') Email:
+                    input(type='email', id='email', name='email', required)
+                div
+                    label(for='date') Preferred Appointment Date:
+                    input(type='date', id='date', name='date', required)
+                div
+                    label(for='dropdown') --Please Choose an Option ($72 per option, one hour long)--
+                    select(id='dropdown_option', name='dropdown')
+                        option(value='option1') 9:00 AM
+                        option(value='option2') 10:00 AM
+                        option(value='option3') 11:00 AM
+                        option(value='option4') 12:00 PM
+                        option(value='option5') 1:00 PM
+                        option(value='option6') 2:00 PM
+                        option(value='option7') 3:00 PM
+                        option(value='option8') 4:00 PM
+                div
+                    label(for='checkbox') Click here if paying with cash
+                    input(type='checkbox', id='checkbox', name='checkbox')
+                div
+                    label(for='submit') Confirm Appointment:
+                    input(type='submit', id='submit', name='submit', value='Submit')
+                p#calculatedValue

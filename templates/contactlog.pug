@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Contact Log
+        link(rel='stylesheet', type='text/css', href='/css/main.css')
+        link(rel='stylesheet', type='text/css', href='/css/main.dark.css')
+        script(src='/js/main.js')
+        script(src='/js/table.js')
+        script(src='/js/deleteContact.js')
+        script(src='/js/adminBanner.js')
+    body
+        nav
+            ul
+                li
+                    a(href='/') Home
+                li
+                    a(href='/testimonies') Testimonials
+                li
+                    a(href='/contact') Schedule Appointment
+                li
+                    a(href='/admin/contactlog') Contact Log
+                li
+                    button#toggleTheme Toggle Dark Mode
+
+        h1 Contact Log
+        .sale-management-container
+            p#setSale Set Sale
+            input#sale-message-input.sale-input(type='text', placeholder='Enter sale message here')
+            button.sale-btn(onclick='setSale()') Set Sale
+            button.sale-btn(onclick='endSale()') End Sale
+        div#notification-box.notification(style='display: none;')
+
+        .contact-log-container
+            table
+                thead
+                    tr
+                        th Name
+                        th Email
+                        th Date
+                        th Time
+                        th Time Until Appointment
+                        th Action
+                tbody
+                    each contact in contacts
+                        tr
+                            td= contact.name
+                            td
+                                a(href=`mailto:${contact.email}`)= contact.email
+                            td= contact.date
+                            td= contact.time
+                            td.time-until(data-date=`${contact.date} ${contact.time}`)
+                            td
+                                button.delete-btn(data-id=contact.id) Delete

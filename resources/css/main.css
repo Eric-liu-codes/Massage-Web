@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: #05386B;
+    font-family: Serif;
+    font-style: italic;
+    padding-left: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5em;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 50%;
+}
+
+.text-box {
+    background-color: #0d8661;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.text-box ol {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+#main_strong {
+    color: #016801;
+}
+
+#location {
+    color: #05386B;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding: 25px;
+    padding-top: 10;
+    padding-bottom: 0;
+}
+
+.contact-form-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #05386B;
+}
+
+#schedule {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    margin: 20px 0;
+    border-spacing: 2px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: #094b8d;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.contact-log-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #05386B;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #05386B;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.review {
+    border: 3px solid #05386B;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.reviewer-name {
+    text-align: right;
+    font-weight: bold;
+    color: #05386B;
+}
+
+body {
+    background-color: #8EE4AF;
+    font-family: Arial, sans-serif, Serif;
+    color: black;
+}
+
+ol, li {
+    text-align: center;
+    font-size: large;
+}
+
+ol {
+    font-size: large;
+}
+
+nav {
+    background-color: #0d8661;
+    overflow: hidden;
+}
+
+nav ul {
+    width: 80%;
+    margin: auto;
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 14px 0;
+}
+
+nav ul li a {
+    color: #05386B;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+nav ul li a:hover {
+    background-color: #8EE4AF;
+}
+
+.sale-input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    text-align: center;
+}
+
+.sale-btn {
+    padding: 10px 20px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sale-btn:hover {
+    background-color: #45a049;
+}
+
+.notification {
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    margin: 10px 0;
+    display: none;
+    text-align: center;
+}
+
+#saleBanner {
+    display: none;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: Serif;
+    font-style: italic;
+}
+
+.sale-management-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #05386B;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#setSale {
+    font-size: 2.5em;
+    color: black;
+    font-family: Serif;
+    font-style: italic;
+}
